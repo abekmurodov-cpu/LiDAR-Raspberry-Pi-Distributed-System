@@ -105,13 +105,15 @@ rviz2
 ```
 
 2. Configure the View:
-* By default, RViz2 will be blank or show a warning. Follow these exact steps to fix it:
+
+ By default, RViz2 will be blank or show a warning. Follow these exact steps to fix it:
  
  * 1.In the top-left, change Fixed Frame from map to laser.
  * 2.In the bottom-left, click Add -> By topic -> /scan -> LaserScan.
 
 3. The "QoS Mismatch" Fix (Missing Dots):
-* Because LiDARs send data so fast, they use a "Best Effort" network policy. RViz2 defaults to "Reliable". We must match them:
+
+ Because LiDARs send data so fast, they use a "Best Effort" network policy. RViz2 defaults to "Reliable". We must match them:
  
  * 1.Expand the LaserScan menu on the left panel.
  * 2.Expand QoS Policies.
