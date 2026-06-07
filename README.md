@@ -77,7 +77,7 @@ ros2 launch delta2a_lidar lidar.launch.py
 (When you see [WARN] Unknown CT=0xA3, the LiDAR is successfully streaming data to the Wi-Fi!)
 ----------------------------------------------------------------------------------------------------------------------
 
-###💻 Step 2: The Base Station (Ubuntu Laptop Setup)
+### 💻 Step 2: The Base Station (Ubuntu Laptop Setup)
 The laptop must be connected to the exact same Wi-Fi network as the Raspberry Pi.
 1. Tune into the Robot's Network Channel:
 Open a new terminal on your laptop and run:
@@ -96,7 +96,7 @@ ros2 topic list
 (If you see /scan in the output, your laptop is successfully receiving the LiDAR data wirelessly!)
 ---------------------------------------------------------------------------------------------------------------------
 
-###👁️ Step 3: RViz2 Visualization & Bug Fixes
+### 👁️ Step 3: RViz2 Visualization & Bug Fixes
 Now we visualize the physical room in 3D using RViz2.
 1. Launch RViz2:
 
@@ -123,7 +123,7 @@ Because LiDARs send data so fast, they use a "Best Effort" network policy. RViz2
 
 ---------------------------------------------------------------------------------------------------------------------
 
-###💾 Step 4: Save your Configuration
+### 💾 Step 4: Save your Configuration
 To avoid reconfiguring RViz2 every time you reboot:
  1.In RViz2, click File -> Save Config As.
  2.Save it to your home folder as lidar_map.rviz.
