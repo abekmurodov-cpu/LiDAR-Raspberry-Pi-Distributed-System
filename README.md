@@ -5,7 +5,7 @@ How to check lidar working with Raspberry pi using your laptop on the same chann
 # 🤖 Autonomous ROS 2 Robot: SLAM and Teleoperation
 Welcome to the documentation for my Robotics Engineering Internship project! 
 
-This repository provides a step-by-step guide on how to build a fully distributed, autonomous ROS 2 robot using a **Raspberry Pi 4/5**, a **TRIK Controller**, and a **Delta-2A LiDAR**.
+This repository provides a step-by-step guide on how to build a fully distributed, autonomous ROS 2 robot using a **Raspberry Pi 4/5**, and a **Delta-2A LiDAR**.
 
 ---
 
