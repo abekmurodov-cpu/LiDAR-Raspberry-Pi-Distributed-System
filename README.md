@@ -2,14 +2,13 @@
 How to check lidar working with Raspberry pi using your laptop on the same channel with RPI
 
 
-# 🤖 Autonomous ROS 2 Robot: SLAM and Teleoperation
-Welcome to the documentation for my Robotics Engineering Internship project! 
+
 
 This repository provides a step-by-step guide on how to build a fully distributed, autonomous ROS 2 robot using a **Raspberry Pi 4/5**, and a **Delta-2A LiDAR**.
 
 ---
 
-## 📡 Part 1: LiDAR + Raspberry Pi Distributed System
+## LiDAR + Raspberry Pi Distributed System
 In this phase, we establish a **Distributed ROS 2 Architecture**. The heavy hardware reading is done on an edge device (Raspberry Pi), which wirelessly streams sensor data to a powerful base station (Ubuntu Laptop) for visualization.
 
 ### 🛠️ Hardware Architecture
