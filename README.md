@@ -129,7 +129,8 @@ rviz2
 ---------------------------------------------------------------------------------------------------------------------
 
 ### 💾 Step 4: Save your Configuration
-* To avoid reconfiguring RViz2 every time you reboot:
+
+To avoid reconfiguring RViz2 every time you reboot:
  
  * 1.In RViz2, click File -> Save Config As.
  * 2.Save it to your home folder as lidar_map.rviz.
