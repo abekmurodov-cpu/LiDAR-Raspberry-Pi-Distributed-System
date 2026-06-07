@@ -37,7 +37,7 @@ sudo chmod 777 /dev/ttyUSB0
 
 ```bash
 cd ~
-git clone https://github.com/krranky/delta2a_lidar_ros2.git
+git clone https://github.com/abekmurodov-cpu/LiDAR-Raspberry-Pi-Distributed-System.git
 cd delta2a_lidar_ros2/docker
 ```
 
