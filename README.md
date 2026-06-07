@@ -135,7 +135,7 @@ To avoid reconfiguring RViz2 every time you reboot:
  * 1.In RViz2, click File -> Save Config As.
  * 2.Save it to your home folder as lidar_map.rviz.
  
-To quick-launch this setup tomorrow, simply run:
+To quick-launch this setup later, simply run:
 
 ```bash
 source /opt/ros/*/setup.bash
