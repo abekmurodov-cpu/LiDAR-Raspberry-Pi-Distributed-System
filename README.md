@@ -78,7 +78,25 @@ ros2 launch delta2a_lidar lidar.launch.py
 ----------------------------------------------------------------------------------------------------------------------
 
 ### 💻 Step 2: The Base Station (Ubuntu Laptop Setup)
-The laptop must be connected to the exact same Wi-Fi network as the Raspberry Pi.
+The laptop must be connected to the **exact same Wi-Fi network** as the Raspberry Pi.
+
+#### ⚙️ Pre-requisite: Install ROS 2 (Automated Method)
+If you do not have ROS 2 installed on your laptop, run this automated script. It will automatically detect your Ubuntu version (22.04, 24.04, or 26.04) and install the correct ROS 2 Desktop package (Humble, Jazzy, or Lyrical) along with RViz2:
+
+```bash
+# 1. Setup security keys and repositories
+sudo apt update && sudo apt install curl gnupg lsb-release software-properties-common -y
+sudo add-apt-repository universe -y
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+sudo apt update
+
+# 2. Auto-detect the correct ROS 2 version and install it
+export ROS_PKG=$(apt-cache search ros- | grep -oP '^ros-[a-z]+-desktop(?=\s)' | head -n 1)
+echo "Installing: $ROS_PKG"
+sudo apt install $ROS_PKG -y
+```
+
 1. Tune into the Robot's Network Channel:
 Open a new terminal on your laptop and run:
 
